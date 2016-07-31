@@ -28,22 +28,31 @@
 		<div class="navbar-fixed">
 			<nav class="black" role="navigation">
 				<div class="nav-wrapper container">
-				<a id="logo-container" href="#" class="brand-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo.png"></a>
-				<?php wp_nav_menu( array( 
-					'theme_location' => 'primary', 
-					'container' => 'ul', 
-					'menu_class' => 'right hide-on-med-and-down',
-					'menu_id' => ''  
-					) );
-				?>
-				<?php wp_nav_menu( array( 
-					'theme_location' => 'primary', 
-					'container' => 'ul', 
-					'menu_class' => 'side-nav', 
-					'menu_id' => 'nav-mobile' 
-					) ); 
-				?>
-				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+					<a id="logo-container" href="#" class="brand-logo left">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo.png">
+					</a>
+					<?php
+					 //wp_nav_menu( array( 
+					//	'theme_location' => 'primary', 
+					//	'container' => 'ul', 
+				//		'menu_class' => 'right hide-on-med-and-down',
+				//		'menu_id' => ''  
+				//		) );
+					?>
+					<?php 
+					// wp_nav_menu( array( 
+					//'theme_location' => 'primary', 
+					//	'container' => 'ul', 
+				//		'menu_class' => 'side-nav', 
+				//		'menu_id' => 'nav-mobile' 
+				//		) );
+					?>
+					<ul class="right">
+						<li><a href="#" id="home">Hem</a></li>
+						<li><a href="#" id="about">Om oss</a></li>
+						<li><a href="#" id="team">Team</a></li>
+					</ul>
+					<!-- <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
 				</div>
 			</nav>
 		</div>

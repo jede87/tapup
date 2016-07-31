@@ -9,20 +9,20 @@
 
 get_header(); ?>
 
-<div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-		<div class="section">
-			<div class="row">
-				<div class="col s12 m6 center">
-					<h1 class="section-text header white-text">Vi i SVERIGE har<br> ett av världen<br> <b>bästa</b> kranvatten, <br>ändå...</h1>
+<div id="home-container" class="parallax-container">
+	<div class="section no-pad-bot">
+		<div class="container">
+			<div class="section">
+				<div class="row">
+					<div class="col s12 m6 center">
+						<h1 class="section-text header white-text">Vi i SVERIGE har<br> ett av världen<br> <b>bästa</b> kranvatten, <br>ändå...</h1>
+					</div>
 				</div>
 			</div>
 		</div>
-	  </div>
-    </div>
-    <div class="parallax"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Bakgrund1.jpg"></div>
-  </div>
+	</div>
+	<div class="parallax"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Bakgrund1.jpg"></div>
+</div>
 
 	<div class="section no-pad grey darken-4">
 		<div class="container">
@@ -104,17 +104,15 @@ get_header(); ?>
 			<div class="row center">
 			<?php 
 			if (function_exists('newsletter_form')){
-				echo '<div class="row">';
-				echo '<div class="col s12">';
-				newsletter_form();
-				echo '</div>';
-				echo '</div>';
+
+				newsletter_form(1);
+
 			}  ?>
 			</div>
 		</div>
 	</div>
 
-	<div class="container">
+	<div id="team-container" class="container">
 		<div class="section white">
 			<div class="col s12 center">
 				<h1 class="section-text header black-text">Team</h1>

@@ -1,0 +1,38 @@
+<script type="text/javascript">
+//<![CDATA[
+if (typeof newsletter_check !== "function") {
+window.newsletter_check = function (f) {
+    var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
+    if (!re.test(f.elements["ne"].value)) {
+        alert("The email is not correct");
+        return false;
+    }
+    for (var i=1; i<20; i++) {
+    if (f.elements["np" + i] && f.elements["np" + i].required && f.elements["np" + i].value == "") {
+        alert("");
+        return false;
+    }
+    }
+    if (f.elements["ny"] && !f.elements["ny"].checked) {
+        alert("You must accept the privacy statement");
+        return false;
+    }
+    return true;
+}
+}
+//]]>
+</script>
+
+<div class="newsletter">
+<form method="post" action="//localhost:3000/tapup/?na=s" onsubmit="return newsletter_check(this)">
+
+<!-- email -->
+<div class="input-field">
+         <label for="ne">E-post</label>
+         <input class="newsletter-email" placeholder="Vill du veta mer? Fyll i din e-post här." type="email" name="ne" required>
+         <input class="newsletter-submit btn  blue darken-1" type="submit" value="TapUP!" />
+</div>
+
+
+</form>
+</div>
