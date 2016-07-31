@@ -1,0 +1,54 @@
+html{
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif !important;
+}
+nav{
+    ul{
+        li{
+            a{
+                color: #fff !important;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+         }
+    }
+} 
+.parallax-container {
+      height: 500px;
+    }
+
+#logo-container{
+    img{
+        height: 100%;
+        width: auto;
+        vertical-align: baseline;
+    }
+}
+.section-text{
+    text-shadow: 2px 2px 4px rgba(125,125,125, 0.5);
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+.extra-large{
+    font-size: 6em;
+}
+#contactus{
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 700px;
+}
+.team-container{
+    .team-image{
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 235px;
+        height: 235px;
+    }
+    .team-links{
+        a{
+            img{
+                width: 50px;
+            }
+        }
+    }
+}
