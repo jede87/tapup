@@ -1,8 +1,17 @@
+@import "../../js/vendor/materialize/sass/materialize.scss";
+
 html{
-    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif !important;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
 }
 
     nav{
+        .brand-logo{
+            height: 64px;
+            img{ 
+                height: 50px;
+                margin-top: -4px;
+            }
+        }
         ul.side-nav{
             li{
                 a{
@@ -63,6 +72,7 @@ html{
         }
         .newsletter-submit{
             width: 20%;
+            text-transform: none;
         }
     }
 }
@@ -81,3 +91,12 @@ html{
         }
     }
 }
+ @media #{$small-and-down} {
+    .parallax{
+        img{
+            height: 100% !important;
+            width: auto !important;
+            max-width: inherit !important;
+        }
+    }
+  }

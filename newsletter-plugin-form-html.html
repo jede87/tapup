@@ -24,15 +24,12 @@ window.newsletter_check = function (f) {
 </script>
 
 <div class="newsletter">
-<form method="post" action="//localhost:3000/tapup/?na=s" onsubmit="return newsletter_check(this)">
-
-<!-- email -->
-<div class="input-field">
-         <label for="ne">E-post</label>
-         <input class="newsletter-email" placeholder="Vill du veta mer? Fyll i din e-post här." type="email" name="ne" required>
-         <input class="newsletter-submit btn  blue darken-1" type="submit" value="TapUP!" />
-</div>
-
-
-</form>
+    <form method="post" action="//localhost:3000/tapup/?na=s" onsubmit="return newsletter_check(this)">
+        <!-- email -->
+        <div class="input-field">
+            <label for="ne">E-post</label>
+            <input class="newsletter-email" placeholder="Thirsty for more? Fyll i din e-post här" type="email" name="ne" required>
+            <input class="newsletter-submit btn  blue darken-1" type="submit" value="TapUP!" />
+        </div>
+    </form>
 </div>
