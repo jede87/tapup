@@ -83,7 +83,7 @@ function mb_imagelink_setup() {
  */
 function mb_scripts() {
 	wp_enqueue_style( 'materializecss', get_template_directory_uri() . '/assets/js/vendor/materialize/dist/css/materialize.css' );
-	wp_enqueue_style( '_mbbasetheme-style', get_stylesheet_uri() );
+	wp_enqueue_style( '_mbbasetheme-style', get_stylesheet_uri() . '?v=' . date("YmdHis") );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
