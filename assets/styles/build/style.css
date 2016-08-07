@@ -9254,6 +9254,9 @@ nav ul li a:hover {
   text-transform: none;
 }
 
+.team-container {
+  margin: 15px 0;
+}
 .team-container .team-image {
   background-repeat: no-repeat;
   background-position: center top;
